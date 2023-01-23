@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="visitas.js"></script>
+    <body id="page-top" onload="getvisitor();">
+      <title></JG-Bots-Apis/></title>
+      <meta property="og:title" content="JG-Bots - Rest Api">  
+      <meta name="description" content="Rest De Api's Em Desenvolvimento">
+      <meta property="og:image" content="https://telegra.ph/file/d695e2b5b5308ee83ce54.jpg">
+      <link rel="apple-touch-icon" href="https://telegra.ph/file/d695e2b5b5308ee83ce54.jpg">
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="assets/vendors/jvectormap/jquery-jvectormap.css">
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
+    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.theme.default.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <div class="row p-0 m-0 proBanner" id="proBanner">
+      </div>
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href="home.html"><img src="https://telegra.ph/file/d695e2b5b5308ee83ce54.jpg" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo" href="home.html"><img src="https://telegra.ph/file/d695e2b5b5308ee83ce54.jpg" alt="logo" /></a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="https://telegra.ph/file/d695e2b5b5308ee83ce54.jpg" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal">JG-Bots Rest Api's</h5>
+                  <span>Criada Em 27/07/2022</span>
+                </div>
+              </div>
+              <a href="#" id="profile-dropdown" data-bs-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+              <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-settings text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-onepassword  text-info"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-calendar-today text-success"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Menu De Api's</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-bs-toggle="collapse" href="#MenuPlay" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <span class="iconify" data-icon="cib:youtube" style="color: red;" data-width="17" data-height="17"></span>
+
+              </span>
+              <span class="menu-title">Apis Youtube</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="MenuPlay">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="yt/playmp3?&musica=malvadao3&apikey=jg">Youtube Play Audio</a></li>
+                <li class="nav-item"> <a class="nav-link" href="yt/playmp4?&musica=malvadao3&apikey=jg">Youtube Play Video</a></li>
+                <li class="nav-item"> <a class="nav-link" href="yt/playlink/mp3?&link=malvadao3e&apikey=jg">Ytmp3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="yt/playlink/mp4?&link=malvadao3e&apikey=jg">Ytmp4</a></li>
+            
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-bs-toggle="collapse" href="#MenuSocial" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <span class="iconify" data-icon="icomoon-free:users" style="color: #ACFA58;" data-width="17" data-height="17"></span>
+
+              </span>
+              <span class="menu-title">Apis Medias Sociais</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="MenuSocial">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="download/tiktok?link=https://vm.tiktok.com/ZMLJDgYLV/&apikey=jg">Tik Tok MP3/MP4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="download/instagram?link=https://www.instagram.com/tv/CYtbo6zLaXK/&apikey=jg">Instagram MP4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="download/twitter?link=https://twitter.com/a_lzmods/status/1481971538786197505?s=20&apikey=jg">Twitter MP4</a></li>
+              </ul>
+            </div>
+        </li>
+        </li>
+        <li class="nav-item menu-items">
+          <a class="nav-link" data-bs-toggle="collapse" href="#ui-basicc" aria-expanded="false" aria-controls="ui-basic">
+            <span class="menu-icon">
+              <span class="iconify" data-icon="el:download" style="color: springgreen;" data-width="17" data-height="17"></span>
+
+            </span>
+            <span class="menu-title">Apis De Download</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-basicc">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">...</a></li>
+            </ul>
+          </div>
+        </li>
+      </li>
+      <li class="nav-item menu-items">
+        <a class="nav-link" data-bs-toggle="collapse" href="#MenuPesquisas" aria-expanded="false" aria-controls="ui-basic">
+          <span class="menu-icon">
+            <span class="iconify" data-icon="fa-solid:search" style="color: #ff8000;" data-width="17" data-height="17"></span>
+
+          </span>
+          <span class="menu-title">Apis De Pesquisas</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="MenuPesquisas">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="download/tiktok?link=https://vm.tiktok.com/ZMLJDgYLV/&apikey=jg">Play Store Search</a></li>
+            <li class="nav-item"> <a class="nav-link" href="download/instagram?link=https://www.instagram.com/tv/CYtbo6zLaXK/&apikey=jg">Pinterest Search</a></li>
+            <li class="nav-item"> <a class="nav-link" href="download/twitter?link=https://twitter.com/a_lzmods/status/1481971538786197505?s=20&apikey=jg">Letra Da Musica Search</a></li>
+          </ul>
+        </div>
+    </li>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-bs-toggle="collapse" href="#MenuConsultas" aria-expanded="false" aria-controls="auth">
+              <span class="menu-icon">
+                <span class="iconify" data-icon="fa-solid:user-secret" style="color: #18c7e6;" data-width="17" data-height="17"></span>
+
+              </span>
+              <span class="menu-title">Apis De Consultas</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="MenuConsultas">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="apis-limitadas/consultas/cpf?cpf=96944161168&apikey=jg"> Consultar CPF </a></li>
+                <li class="nav-item"> <a class="nav-link" href="consultas/cep?cep=01153000&apikey=jg"> Consultar CEP </a></li>
+                <li class="nav-item"> <a class="nav-link" href="consultas/cepv2?cep=01153000&apikey=jg"> Consultar Cep V2 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="consultas/cnpj?cnpj=27865757000102&apikey=jg"> Consultar CNPJ </a></li>
+                <li class="nav-item"> <a class="nav-link" href="consultas/ip?ip=8.8.8.8&apikey=jg"> Consultar IP </a></li>
+                <li class="nav-item"> <a class="nav-link" href="consultas/ddd?ddd=62&apikey=jg"> Consultar DDD </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-bs-toggle="collapse" href="#MenuTextPro" aria-expanded="false" aria-controls="auth">
+              <span class="menu-icon">
+                <span class="iconify" data-icon="bx:bx-text" style="color: #2e2efe;" data-width="17" data-height="17"></span>
+
+              </span>
+              <span class="menu-title">Apis TextPro</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="MenuTextPro">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="textpro/pornhub-logo?texto1=JerfinhoPro&texto2=api&apikey=jg"> Pornhub Logo </a></li>
+                <li class="nav-item"> <a class="nav-link" href="textpro/joker-logo?texto=JerfinhoPro-api&apikey=jg"> Joker Logo </a></li>
+                <li class="nav-item"> <a class="nav-link" href="textpro/cam-logo?texto=JerfinhoPro&apikey=jg"> Camera Logo </a></li>
+                <li class="nav-item"> <a class="nav-link" href="textpro/glitch-logo?texto=JerfinhoPro&apikey=jg"> Glitch Logo </a></li>
+                <li class="nav-item"> <a class="nav-link" href="textpro/glitch2-logo?texto=JerfinhoPro&apikey=jg"> Glitch Logo V2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="textpro/harrypotter-logo?texto=JerfinhoPro&apikey=jg"> Harry Potter Logo </a></li>
+                <li class="nav-item"> <a class="nav-link" href="textpro/neon3d-logo?texto=JerfinhoPro&apikey=jg"> Neon 3D Logo </a></li>
+                <li class="nav-item"> <a class="nav-link" href="textpro/thunder-logo?texto=Jerfinhopro&apikey=jg"> Thunder Logo </a></li>
+                <li class="nav-item"> <a class="nav-link" href="textpro/stone-logo?texto1=Jerfinhopro&apikey=jg"> Stone Logo </a></li>
+              </ul>
+            </div>
+          </li>
+        </li>
+        <li class="nav-item menu-items">
+          <a class="nav-link" data-bs-toggle="collapse" href="#MenuCanvas" aria-expanded="false" aria-controls="auth">
+            <span class="menu-icon">
+              <span class="iconify" data-icon="bi:image-fill" style="color: #f7fe2e;" data-width="17" data-height="17"></span>
+
+            </span>
+            <span class="menu-title">Apis De Canvas</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="MenuCanvas">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="canvas/clyde?texto=</Jerfinhopro/>&apikey=jg"> Clyde Discord </a></li>
+              <li class="nav-item"> <a class="nav-link" href="canvas/trigger?url=https://telegra.ph/file/655283493047a9452a934.jpg&apikey=jg"> Triggered </a></li>
+              <li class="nav-item"> <a class="nav-link" href="canvas/changemymind?texto=</Jerfinhopro/>&apikey=jg"> ChangeMyMind </a></li>
+            </ul>
+          </div>
+        </li>
+      </li>
+      <li class="nav-item menu-items">
+        <a class="nav-link" data-bs-toggle="collapse" href="#MenuNSFW" aria-expanded="false" aria-controls="auth">
+          <span class="menu-icon">
+            <span class="iconify" data-icon="bi:emoji-heart-eyes-fill" style="color: #fa58ac;" data-width="17" data-height="17"></span>
+
+          </span>
+          <span class="menu-title">Apis De Nsfw</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="MenuNSFW">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="nsfw/loli?apikey=jg"> Nsfw Loli </a></li>
+            <li class="nav-item"> <a class="nav-link" href="nsfw/hentai?apikey=jg"> Nsfw Hentai </a></li>
+            <li class="nav-item"> <a class="nav-link" href="nsfw/elisa-sanches?apikey=jg"> Nsfw Mia Khalifa </a></li>
+            <li class="nav-item"> <a class="nav-link" href="nsfw/miakhalifa?apikey=jg"> Nsfw Elisa Sanches </a></li>
+          </ul>
+        </div>
+      </li>
+    </li>
+    <li class="nav-item menu-items">
+      <a class="nav-link" data-bs-toggle="collapse" href="#MenuOutras" aria-expanded="false" aria-controls="auth">
+        <span class="menu-icon">
+          <span class="iconify" data-icon="fluent:more-circle-32-regular" style="color: #04b486;" data-width="17" data-height="17"></span>
+
+        </span>
+        <span class="menu-title">Outras</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="MenuOutras">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="others/attp?texto=Jerfinhopro&apikey=jg"> ATTP </a></li>
+          <li class="nav-item"> <a class="nav-link" href="#"> Tradutor </a></li>
+          <li class="nav-item"> <a class="nav-link" href="others/camufladordelinks?link=https://lzmods-api.herokuapp.com&apikey=jg"> Encurtador Tinyurl </a></li>
+        </ul>
+      </div>
+    </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <img class="img-xs rounded-circle " src="https://telegra.ph/file/d695e2b5b5308ee83ce54.jpg" alt="">
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-100">
+                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                  <input type="text" class="form-control" placeholder="</-api/> - JerfinhoPro OFC">
+                </form>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item dropdown d-none d-lg-block">
+                
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+                  <h6 class="p-3 mb-0">Projects</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-file-outline text-primary"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Software Development</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-web text-info"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">UI Development</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-layers text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Software Testing</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">See all projects</p>
+                </div>
+              </li>
+              <li class="nav-item nav-settings d-none d-lg-block">
+                <a class="nav-link" href="#">
+                  <i class="mdi mdi-view-grid"></i>
+                </a>
+              </li>
+              
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+                  <i class="mdi mdi-bell"></i>
+                  <span class="count bg-danger"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <h6 class="p-3 mb-0">INFORMAÇÕES DO SERVE</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-calendar text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">SERVER #1 ON</p>
+                      <p class="text-muted ellipsis mb-0"> :) </p>
+                    </div>
+                
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-link-variant text-warning"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">SERVER #2 ON</p>
+                      <p class="text-muted ellipsis mb-0"> :) </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">JG-Bots-Apis</p>
+                </div>
+              </li>
+              
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="col-12 grid-margin stretch-card">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+<div class="card">
+<div class="card-body">
+<div class="row">
+<p class="mb-0">Oi So tou avizando que as apikeys sao gratis pq vcs merecem :) mais dexem os creditos ok</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+<div class="card">
+<div class="card-body">
+<div class="row">
+
+<div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://telegra.ph/file/4bee7d37164afbaba6612.jpg" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">INFORMAÇOES</h5>
+Hora : <span class="badge badge-success" id="hora">carregando...</span> 
+<br>
+<br>
+Data : <span class="badge badge-danger" id="resultado">carregando...</span>
+<br><br>
+Visitantes : <span class="badge badge-danger" id="visits">carregando...</span>
+<br>
+<br>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Termino das informações -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+
+<!-- content-wrapper ends -->
+<!-- partial:partials/_footer.html -->
+
+<footer class="footer">
+<div class="d-sm-flex justify-content-center justify-content-sm-between">
+<span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2022 JG-Bots</span>
+<span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Meu Canal: <a href="https://youtube.com/channel/UC6Nvd3QgM0j1_ebNF4OC84g" target="_blank">「 Clique 」</a> RUMO AOS 100 INSCRITOS</span>
+</div>
+
+</footer>
+
+<!-- partial -->
+
+</div>
+
+<!-- main-panel ends -->
+
+</div>
+
+<!-- page-body-wrapper ends -->
+
+</div>
+
+<!-- container-scroller -->
+<!-- plugins:js -->
+
+<script src="assets/vendors/js/vendor.bundle.base.js"></script>
+
+<!-- endinject -->
+<!-- Javascript -->
+
+<script src="/script/jquery.min.js"></script>
+<script src="/script/index.js"></script>
+     
+<script> 
+        const resultado = document.getElementById("resultado") 
+        var data = new Date();
+        
+        var dia = String(data.getDate()).padStart(2, '0');
+        
+        var mes = String(data.getMonth() + 1).padStart(2, '0');
+        
+        var ano = data.getFullYear();
+        
+        dataAtual = dia + '/' + mes + '/' + ano;
+        
+        resultado.innerHTML = dataAtual;
+    
+</script>
+    
+<script>  
+    const hora = document.getElementById('hora');
+    
+    const format_0_616c6963656d696e6861636163686f72696e6861 = n => {
+            return ('0' + n).slice(-2);
+          }
+    const interval = setInterval(() => {
+    const now = new Date();
+    
+    const horax = format_0_616c6963656d696e6861636163686f72696e6861(now.getHours()) + ':' + format_0_616c6963656d696e6861636163686f72696e6861(now.getMinutes()) + ':' + format_0_616c6963656d696e6861636163686f72696e6861(now.getSeconds());
+    
+    hora.innerHTML = horax;
+    }, 1000);
+</script>
+
+<!-- Plugin js for this page -->
+<script src="assets/vendors/chart.js/Chart.min.js"></script>
+<script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+<script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+<script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+   
+<script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+<script src="assets/js/off-canvas.js"></script>
+<script src="assets/js/hoverable-collapse.js"></script>
+<script src="assets/js/misc.js"></script>
+<script src="assets/js/settings.js"></script>
+<script src="assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+<script src="assets/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+</body>
+</html>
